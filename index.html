@@ -7,49 +7,80 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background: #f2f2f2;
+            background: #f7f7f7;
         }
+
+        /* CLEAN HEADER */
         header {
             background: #1a3bb3;
             color: white;
-            padding: 25px;
+            padding: 40px 20px;
             text-align: center;
-            font-size: 35px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 32px;
             font-weight: bold;
         }
-        .subtitle {
-            text-align: center;
+        header p {
+            margin: 8px 0 0 0;
             font-size: 18px;
-            margin-top: -15px;
-            color: white;
+            opacity: 0.9;
         }
+
+        /* CLEAN CONTAINER */
         .container {
             max-width: 900px;
-            margin: 50px auto;
+            margin: 40px auto;
             background: white;
             padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
+
         h2 {
             color: #1a3bb3;
+            margin-bottom: 10px;
         }
+
+        /* CONTACT BOX */
         .contact-box {
             background: #e8ecff;
-            padding: 20px;
-            border-radius: 10px;
+            padding: 25px;
+            border-radius: 12px;
             margin-top: 20px;
         }
+
+        /* DISCOUNT + GROUP CARD */
+        .info-card {
+            background: #fff7d6;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+            border-left: 6px solid #ffcc00;
+        }
+
+        /* HIRING CARD */
+        .hiring-card {
+            background: #e5ffe5;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+            border-left: 6px solid #28a745;
+        }
+
         .btn {
-            display: inline-block;
-            padding: 12px 20px;
+            display: block;
+            text-align: center;
+            padding: 14px 20px;
             background: #25d366;
             color: white;
             text-decoration: none;
             font-size: 18px;
             border-radius: 8px;
-            margin-top: 10px;
+            margin-top: 15px;
         }
+
         footer {
             margin-top: 40px;
             text-align: center;
@@ -58,27 +89,48 @@
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    Master Mind Tutors (MMT)
-    <div class="subtitle">Online & Offline Coaching in Noida</div>
+    <h1>Master Mind Tutors (MMT)</h1>
+    <p>Online & Offline Coaching in Noida</p>
 </header>
 
 <div class="container">
-    <h2>About the Tutor</h2>
-    <p><b>Manish Singh (MCA)</b> — Specialist in <b>Maths, Physics, Chemistry</b> (PCM).  
-    Teaches both <b>Online</b> and <b>Offline (Noida)</b> with personalized learning and exam-focused strategies.</p>
 
+    <!-- ABOUT TUTOR -->
+    <h2>About the Tutor</h2>
+    <p><b>Manish Singh (MCA)</b> — Specialist in <b>Maths, Physics, Chemistry</b> (PCM). Teaches both 
+    <b>Online</b> and <b>Offline (Noida)</b> with personalized learning and exam-focused strategies.</p>
+
+    <!-- CONTACT -->
     <h2>Contact</h2>
     <div class="contact-box">
         <p><b>WhatsApp Numbers:</b></p>
         <p>📱 +91 821980152</p>
         <p>📱 +91 9355795726</p>
 
-        <a class="btn" href="https://wa.me/91821980152" target="_blank">Chat on WhatsApp (1)</a><br>
+        <a class="btn" href="https://wa.me/91821980152" target="_blank">Chat on WhatsApp (1)</a>
         <a class="btn" href="https://wa.me/919355795726" target="_blank">Chat on WhatsApp (2)</a>
     </div>
+
+    <!-- DISCOUNTS + GROUP SESSIONS -->
+    <div class="info-card">
+        <h2>Discounts & Group Sessions</h2>
+        <p>🎉 <b>Sibling Discount Available</b> – Special reduced fees when two or more siblings enroll together.</p>
+        <p>👥 <b>Group Sessions</b> – Students can join small group batches (3–5 students) for a more interactive learning experience.</p>
+        <p>💰 Group batches have reduced pricing and include test series + doubt sessions.</p>
+    </div>
+
+    <!-- HIRING -->
+    <div class="hiring-card">
+        <h2>We Are Hiring Teachers</h2>
+        <p>MMT is expanding! We are looking for skilled tutors in all subjects for both online and offline classes.</p>
+        <p>📌 Requirements: Strong subject knowledge, good communication, consistency.</p>
+        <a class="btn" href="https://wa.me/91821980152" target="_blank">Apply on WhatsApp</a>
+    </div>
+
 </div>
 
 <footer>
